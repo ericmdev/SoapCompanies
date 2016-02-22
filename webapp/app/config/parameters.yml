@@ -1,0 +1,15 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: 3306
+    database_name: soap_companies_db
+    database_user: root
+    database_password: password
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: 54e3af4d3986ac6006d0bee843ce673c5de19b40
+    soap_wsdl: http://example.com/Service.php?wsdl
+    soap_username: demo@example.com
+    soap_password: password
