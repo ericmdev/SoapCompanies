@@ -1,0 +1,14 @@
+companies: 
+  type: rest
+  resource: "AppBundle:CompanyRest"
+  name_prefix: api_
+
+directors: 
+  type: rest
+  resource: "AppBundle:DirectorsRest"
+  name_prefix: api_
+
+quotes: 
+  type: rest
+  resource: "AppBundle:QuoteRest"
+  name_prefix: api_

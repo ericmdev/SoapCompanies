@@ -1,0 +1,24 @@
+{% extends 'AppBundle::base.html.twig' %} 
+
+{% block body %}
+<!-- Main Content --> 
+<div class="container">
+    <div id="main-content">
+
+    	<!-- Title -->
+    	<h1>Soap Companies Web App</h1>
+
+        <!-- Form: Get Quotes -->
+        <div id="form-get-quotes">
+        	<h2>Get Quotes</h2>
+        	<p>Select a company:</p>
+			<form action="/" method="get" ajax=true>
+				<select name="select-company">
+					{% for company in companies %}
+						<option value="{{ company.symbol }}" onclick="window.open('api/quotes/{{ company.symbol }}/history')">{{ company.name }}</option>
+					{% endfor %}
+				</select>
+			</form>
+		</div>
+</div>  
+{% endblock %}
